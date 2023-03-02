@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+      
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    //var é 1 linha; até 3 linhas; add uma linha até as 3 linhas.
+    for(var linha = 1; linha <=3; linha++){
+      //mostra("**********")
+      for(var coluna = 2; coluna <= 10; coluna++){
+            document.write("*");
+      }
+      pulaLinha(); // sem o pula linha ele imprimi 30 estrela junto *********************//
+    }
+
+</script>

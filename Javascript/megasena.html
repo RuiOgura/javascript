@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+      
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+// Gera 6 números aleatórios não repetidos entre 1 e 60
+var numeros = [];
+while (numeros.length < 6) {
+  var numero = Math.floor(Math.random() * 60) + 1;
+  if (numeros.indexOf(numero) === -1) {
+    numeros.push(numero);
+  }
+}
+
+// Exibe os números gerados
+mostra("Seus números da Mega-Sena são: " + numeros.join(", "));
+
+</script>
